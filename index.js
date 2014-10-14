@@ -12,7 +12,7 @@ app.get('/controller/:controller', function(req, res){
 		// TODO: Introspect for the hostname and port of the application.
 		'assets': ['http://localhost:3333/css/styles.css'],
 		// TODO: How does node.js usually handle reporting errors to the client?
-		'errors': []
+		'nothing': []
 	});
 });
 

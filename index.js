@@ -6,8 +6,14 @@ app.listen(3333);
 // Serve static files out of the "files" path.
 app.use(express.static('files'));
 
-app.get('/', function(req, res){
-	res.send('Hello');
+app.get('/controller/:controller', function(req, res){
+	res.json({
+		'data': '<h1>' + req.params.controller + '</h1>',
+		// TODO: Introspect for the hostname and port of the application.
+		'assets': ['http://localhost:3333/css/styles.css'],
+		// TODO: How does node.js usually handle reporting errors to the client?
+		'errors': []
+	});
 });
 
 

@@ -2,6 +2,7 @@
   "name": "node-bueno",
   "private": "true",
   "version": "0.0.1",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/helior/node-bueno"

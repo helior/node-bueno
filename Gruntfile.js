@@ -5,9 +5,8 @@ module.exports = function(grunt) {
 
     // watch our node server for changes
     nodemon: {
-      dev: {
-        script: 'index.js'
-      }
+      index: {script: 'index.js'},
+      dust: {script: 'dust.js'}
     },
 
     // run watch and nodemon at the same time
@@ -24,6 +23,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-nodemon');
   grunt.loadNpmTasks('grunt-concurrent');
 
-  grunt.registerTask('default', ['concurrent']);
-
+  // grunt.registerTask('default', ['concurrent']);
+  grunt.registerTask('index', ['nodemon:index']);
+  grunt.registerTask('dust', ['nodemon:dust']);
 };

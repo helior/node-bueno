@@ -1,7 +1,7 @@
 {
   "name": "node-bueno",
   "private": "true",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "index.js",
   "scripts": {
     "test": "echo \"No tests, but that is okay :)\""

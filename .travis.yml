@@ -1,5 +1,14 @@
 language: node_js
 node_js:
-  - 0.10
+- 0.1
 after_success:
-  - echo "Success!!!!!!!!!!"
+- echo "Success!!!!!!!!!!!!!"
+deploy:
+  provider: releases
+  api_key:
+    secure: N/xl+bKzIw6k24AoSpDF4EkQwittcBMqpmjZO2hgr2XcmTlHPXdYxQsISg5ivc1xXWDz1N8kPJc7MGSU52VbL3WR5NNHpNl7xuN083kMrABeJ0gnMcP2kGQGPJej7Sf3ElOEjJkjEJ7gV/h6xtUtpvsJd7JL94SlhrpzhlSt33A=
+  file: Gruntfile.js
+  skip_cleanup: true
+  on:
+    repo: helior/node-bueno
+    branch: master

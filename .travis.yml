@@ -3,6 +3,9 @@ node_js:
 - 0.10
 after_success:
 - echo "Success!!!!!!!!!!!!!"
+before_deploy:
+  - echo "Ready???"
+  - npm version patch
 deploy:
   provider: releases
   api_key:

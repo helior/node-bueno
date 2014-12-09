@@ -10,5 +10,5 @@ deploy:
   file: Gruntfile.js
   skip_cleanup: true
   on:
-    repo: helior/node-bueno
-    branch: master
+    tags: true
+    all_branches: true

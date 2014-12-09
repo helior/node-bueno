@@ -3,6 +3,8 @@ node_js:
 - 0.10
 after_success:
   - echo "Success!!!!!!!!!!!!!"
+  - git config user.email "heliorcolorado@gmail.com"
+  - git config user.name "Helior"
   - npm version patch
 deploy:
   provider: releases

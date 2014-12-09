@@ -11,4 +11,4 @@ deploy:
   skip_cleanup: true
   on:
     repo: helior/node-bueno
-    branch: travis
+    branch: master
